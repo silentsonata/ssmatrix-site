@@ -1,0 +1,90 @@
+@keyframes sectionFade {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes header {
+    0% {
+        margin-left: -50%;
+    }
+    
+    50% {
+        margin-left: -50%;
+    }
+    
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@font-face {
+    font-family: silentSonataFont;
+    src: url('ref/ssFont.otf')
+}
+
+body {
+    background: #000;
+    background-image: url(ref/background_texture.jpg);
+    color: #fff;
+    min-width: 900px;
+    margin: 0px;
+}
+
+header {
+    animation: 2s ease-out 0s 1 header;
+}
+
+h1 {
+    font-family: silentSonataFont;
+    font-size: 4em;
+    margin: 0px;
+    margin-bottom: -20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-family: silentSonataFont;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+}
+
+section {
+    animation: 3s ease-out 0s 1 sectionFade;
+    margin: 20px 0px;
+}
+
+#twitch-block {
+    background: #000;
+    width: 800px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
